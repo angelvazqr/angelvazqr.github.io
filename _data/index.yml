@@ -7,11 +7,21 @@ metatada:
     type: ""
 css: /resources/css/index.css
 js:
+  - https://code.jquery.com/jquery-3.4.1.min.js
   - /resources/js/index.js
 javascript_partials:
-  - partial_assets/js/test.js
+  - partial_assets/js/navbar.js
+  - partial_assets/js/full-background-intro.js
 sass_partials:
   - "defaults.sass"
   - "sizes.sass"
   - "mixins.sass"
-background_image: './resources/images/Background.jpeg'
+  - "navbar.sass"
+  - "full-background-intro.sass"
+full-background-intro:
+  image: './resources/images/Background.jpeg'
+  heading: 'ANGEL VAZQUEZ'
+  button:
+    # leave #fade to make it fade
+    link: "#fade"
+    text: "Enter"
