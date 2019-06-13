@@ -1,1 +1,11 @@
-theme: jekyll-theme-cayman
+name: angelvazqr.github.io
+markdown: kramdown
+sass:
+    style: compressed
+    sass_dir: _sass
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+plugins:
+  - jekyll-sitemap

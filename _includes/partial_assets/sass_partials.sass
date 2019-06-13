@@ -1,0 +1,4 @@
+// this partial is to automate adding partials to a page using its data_file
+{% for sass in site.data[page.data_file].sass_partials %}
+@import {{ sass }}
+{% endfor %}

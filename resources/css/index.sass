@@ -1,0 +1,35 @@
+---
+data_file: index
+---
+
+{% include partial_assets/sass_partials.sass %}
+
+.view-wrapper
+  min-height: 100vh
+  min-width: 100vw
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  color: white
+  .btn
+    display: block
+    margin: 10px auto auto
+.body-background
+  position: absolute
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  z-index: -1
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(0, 0, 0, .8)

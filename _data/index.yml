@@ -1,0 +1,17 @@
+---
+metatada:
+    description: ""
+    title: ""
+    keywords: ""
+    author: ""
+    type: ""
+css: /resources/css/index.css
+js:
+  - /resources/js/index.js
+javascript_partials:
+  - partial_assets/js/test.js
+sass_partials:
+  - "defaults.sass"
+  - "sizes.sass"
+  - "mixins.sass"
+background_image: './resources/images/Background.jpeg'
