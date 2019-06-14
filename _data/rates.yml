@@ -1,0 +1,18 @@
+---
+metatada:
+    description: ""
+    title: ""
+    keywords: ""
+    author: ""
+    type: ""
+css: /resources/css/rates.css
+js:
+  - https://code.jquery.com/jquery-3.4.1.min.js
+  - /resources/js/rates.js
+javascript_partials:
+  - partial_assets/js/navbar.js
+sass_partials:
+  - "defaults.sass"
+  - "sizes.sass"
+  - "mixins.sass"
+  - "navbar.sass"
