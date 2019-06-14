@@ -25,3 +25,7 @@ full-background-intro:
     # leave #fade to make it fade
     link: "#fade"
     text: "Enter"
+about:
+  image: './resources/images/profile.jpg'
+  title: It all started when...
+  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque nibh. In hac habitasse platea dictumst. Donec cursus felis ut neque consectetur pulvinar. Phasellus ultricies quam ac justo suscipit ornare id a purus. Vestibulum vehicula, tellus in vulputate suscipit, sem nisi laoreet odio, ac aliquam neque justo sit amet lacus. Nunc dictum erat in est dapibus, ac imperdiet arcu auctor. Vestibulum sit amet iaculis mi. In venenatis ex eu urna fringilla, in finibus ex scelerisque. Vestibulum fringilla hendrerit diam hendrerit interdum.
