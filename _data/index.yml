@@ -5,7 +5,9 @@ metatada:
     keywords: ""
     author: ""
     type: ""
-css: /resources/css/index.css
+css:
+  - https://fonts.googleapis.com/css?family=Raleway:500&display=swap
+  - /resources/css/index.css
 js:
   - https://code.jquery.com/jquery-3.4.1.min.js
   - /resources/js/index.js
