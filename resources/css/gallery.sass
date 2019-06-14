@@ -3,3 +3,30 @@ data_file: gallery
 ---
 
 {% include partial_assets/sass_partials.sass %}
+
+#gallery
+  -webkit-column-count: 2
+  -moz-column-count: 2
+  column-count: 2
+  .card
+    text-align: center
+    width: 100%
+    display: inline-block
+    height: 100%
+    margin: 10px
+    .image
+      width: 100%
+      img
+        display: block
+        width: 100%
+        height: auto
+    .image-description
+      padding: 5px
+  +medium-devices
+    -webkit-column-count: 3
+    -moz-column-count: 3
+    column-count: 3
+  +large-devices
+    -webkit-column-count: 4
+    -moz-column-count: 4
+    column-count: 4
