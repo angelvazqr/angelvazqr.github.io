@@ -4,19 +4,30 @@ data_file: index
 
 {% include partial_assets/sass_partials.sass %}
 
+.view-wrapper
+  margin: auto
+
 #index
   display: flex
   // max-width: 100%
   overflow: hidden
   position: relative
   flex-flow: wrap
+  // width: 90%
+  margin: auto
+  background-color: white
+  color: black
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.35)
+  border-radius: 5px
+  margin-bottom: 30px
+  // padding: 10px
   .image-wrapper
     width: 100%
     min-height: 200px
     background-size: cover
     background-position: center
     background-repeat: no-repeat
-    z-index: -1
+    // z-index: -1
     img
       max-width: 100%
       max-height: 100%
@@ -34,4 +45,4 @@ data_file: index
         max-height: 100%
     .about-text
       width: 65%
-      padding: 0 10px 10px
+      padding: 10px 10px

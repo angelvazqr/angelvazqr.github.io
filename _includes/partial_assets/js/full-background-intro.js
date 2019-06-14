@@ -4,5 +4,5 @@ if(location.hash == '#fade'){
 }
 
 $('.full-background-intro .btn').click(()=>{
-  $('.full-background-intro').fadeOut();
+  $('.full-background-intro').fadeOut(400);
 })
