@@ -1,4 +1,4 @@
-// @import 'colors.sass'
+@import 'colors.sass'
 @import 'mixins.sass'
 
 html
@@ -28,7 +28,7 @@ p, h1, h2, h3, h4, h5, h6
 
 a
   text-decoration: none
-  // color: $font-main-color
+  color: $font-main-color
   // &:hover
     // color: $link-hover-color
 
@@ -44,7 +44,7 @@ a
     margin: 0
     padding: 10px
     width: 110px
-    background-color: #a42b2f
+    background-color: $accent-color
     color: white
     font: inherit
     line-height: normal
@@ -56,5 +56,14 @@ a
   width: 85%
   margin: auto
   +medium-devices
-    width: 80%
+    width: 100%
     max-width: 600px
+
+
+.body
+  min-width: 100vw
+  min-height: 100vh
+  // background-image: linear-gradient(to right, $main-color ,$main-color-dark)
+  color: $font-main-color
+  display: flex
+  flex-direction: column

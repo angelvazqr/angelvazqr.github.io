@@ -10,9 +10,11 @@ layout: compress
   <title>{{ page.title }}</title>
 </head>
 <body>
-  {% include navbar.html %}
-  <div class='view-wrapper'>
-    {{ content }}
+  <div class='body'>
+    {% include navbar.html %}
+    <div class='view-wrapper'>
+      {{ content }}
+    </div>
   </div>
 </body>
 </html>
