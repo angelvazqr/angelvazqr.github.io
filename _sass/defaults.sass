@@ -28,7 +28,7 @@ p, h1, h2, h3, h4, h5, h6
 
 a
   text-decoration: none
-  color: $font-main-color
+  // color: $font-main-color
   // &:hover
     // color: $link-hover-color
 
@@ -59,11 +59,25 @@ a
     width: 100%
     max-width: 600px
 
+.page-container-full
+  width: 90%
+  margin: auto
+  +medium-devices
+    // width: 90%
+    max-width: 1000px
 
 .body
   min-width: 100vw
   min-height: 100vh
   // background-image: linear-gradient(to right, $main-color ,$main-color-dark)
-  color: $font-main-color
+  // color: $font-main-color
   display: flex
   flex-direction: column
+
+
+.card
+  background-color: white
+  color: black
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.35)
+  border-radius: 5px
+  overflow: hidden

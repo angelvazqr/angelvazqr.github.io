@@ -5,4 +5,20 @@ permalink: /gallery
 data_file: 'gallery'
 ---
 
-gallery
+<div class='page-container-full' id='gallery'>
+  {% for image in site.data[page.data_file].gallery.images %}
+    <div class='card'>
+      <div class='image'>
+        <img src='{{ image[0] }}'/>
+      </div>
+
+      {% if image[1] %}
+        <div class='image-description'>
+          <p>
+            {{ image[1]}}
+          </p>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
