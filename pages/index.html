@@ -5,4 +5,14 @@ permalink: /
 data_file: 'index'
 ---
 {% include full-background-intro.html %}
-Hello
+<div id='index' class='page-container'>
+  <div class='image-wrapper' style='background-image: url({{ site.data[page.data_file].about.image }})'>
+    <!-- <img src='{{ site.data[page.data_file].about.image }}' /> -->
+  </div>
+  <div class='about-text'>
+    <h1 class='about-title'>{{ site.data[page.data_file].about.title }}</h1>
+    <p>
+      {{ site.data[page.data_file].about.text }}
+    </p>
+  </div>
+</div>
