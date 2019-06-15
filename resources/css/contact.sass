@@ -4,8 +4,6 @@ data_file: contact
 
 {% include partial_assets/sass_partials.sass %}
 
-.title
-  margin-bottom: 15px
 
 input[type=text], input[type=email], textarea
   display: block
@@ -15,34 +13,54 @@ input[type=text], input[type=email], textarea
   width: 100%
   max-width: 225px
   font-size: 1rem
+  &.error
+      border-color: $accent-color
+      color: $accent-color
 .input-wrapper
   position: relative
   max-width: 225px
   margin: 15px auto
-  &::before
-    content: ""
-    left: 0
-    position: absolute
-    width: 100%
-    height: 2px
-    background-color: rgba(110, 110, 110, 0.81)
-    bottom: -4px
-  &::after
-    content: ""
-    left: 0
-    position: absolute
-    width: 0
-    margin: auto
-    margin-left: 50%
-    height: 2px
-    background-color: $main-color
-    transition: 400ms width, 400ms margin
+  // &::before
+  //   content: ""
+  //   left: 0
+  //   position: absolute
+  //   width: 100%
+  //   height: 2px
+  //   background-color: rgba(110, 110, 110, 0.81)
+  //   bottom: -4px
+  // &::after
+  //   content: ""
+  //   left: 0
+  //   position: absolute
+  //   width: 0
+  //   margin: auto
+  //   margin-left: 50%
+  //   height: 2px
+  //   background-color: $main-color
+  //   transition: 400ms width, 400ms margin
   &.focus::after
     width: 100%
     margin-left: 0
 
 .view-wrapper
-  margin: auto
+  margin: 5px
+  text-align: center
+  .title
+    margin-bottom: 15px
+    margin-top: 10px
+
+  .info
+    text-align: left
+    margin: 30px auto 30px
+    // padding: 0 20px
+    width: 85%
+    +medium-devices
+      max-width: 600px
+    // margin-top: 20px 20px
+    // margin-left: 20px
+// .card
+//   width: 90%
+//   margin: auto
 
 #contact-location
   display: flex
@@ -67,14 +85,45 @@ input[type=text], input[type=email], textarea
     .card-2nd-column
       width: 63%
 
-#contact-form
+#contact-form, #contact-location
+  width: 100%
+  width: 85%
   display: flex
   overflow: hidden
   flex-flow: wrap
-  margin: auto
+  margin: 0 auto
   margin-bottom: 30px
   .card-only-column
     width: 100%
     padding: 20px 10px
+    .info
+      text-align: left
+      margin: 10px auto 35px
+    .location
+      display: flex
+      margin-bottom: 25px
+      align-items: center
+      form
+        padding-right: 10px
+        .input-wrapper, input
+          max-width: 175px
+      .title
+        margin-right: 5px
+        display: flex
+        margin-bottom: 0
+        align-items: center
     .btn
       margin-top: 10px
+input[type=text], input[type=email], textarea
+  background-color: #F2F2F2
+  border: 1px solid #C4C4C4
+  transition: 200ms border-color
+  width: 100%
+  display: block
+  padding: 0 3px
+  min-height: 30px
+  margin: 0
+  outline: none
+  font-size: 1.1rem
+  -webkit-appearance: none
+  -moz-appearance: none
