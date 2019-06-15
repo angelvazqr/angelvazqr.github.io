@@ -5,13 +5,19 @@ permalink: /gallery
 data_file: 'gallery'
 ---
 
+<div class='full-image'>
+  <div class='full-image-wrapper'>
+    <img src=''/>
+  </div>
+</div>
+
 <div class='page-container-full' id='gallery'>
   {% for image in site.data[page.data_file].gallery.images %}
     <div class='card'>
       <div class='image'>
-        <img src='{{ image[0] }}'/>
+        <img id='image-{{ forloop.index0 }}'src='{{ image[0] }}'>
       </div>
-
+      {% comment %}
       {% if image[1] %}
         <div class='image-description'>
           <p>
@@ -19,6 +25,7 @@ data_file: 'gallery'
           </p>
         </div>
       {% endif %}
+      {% endcomment %}
     </div>
   {% endfor %}
 </div>
