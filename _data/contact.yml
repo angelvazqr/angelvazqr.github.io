@@ -5,7 +5,9 @@ metatada:
     keywords: ""
     author: ""
     type: ""
-css: /resources/css/contact.css
+css:
+  - https://fonts.googleapis.com/css?family=Raleway:500&display=swap
+  - /resources/css/contact.css
 js:
   - https://code.jquery.com/jquery-3.4.1.min.js
   - /resources/js/contact.js
