@@ -8,13 +8,15 @@ data_file: gallery
   -webkit-column-count: 2
   -moz-column-count: 2
   column-count: 2
-  column-gap: 10px
+  column-gap: 20px
+  padding: 10px 0
   .card
     text-align: center
     width: 100%
-    display: inline-block
-    height: 100%
     margin: 10px 0
+    cursor: pointer
+    &:first-child
+      margin-top: 0
     .image
       width: 100%
       img
