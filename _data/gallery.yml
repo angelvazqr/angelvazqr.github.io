@@ -5,6 +5,7 @@ metatada:
     keywords: ""
     author: ""
     type: ""
+    image: ""
 css:
   - https://fonts.googleapis.com/css?family=Raleway:500&display=swap
   - /resources/css/gallery.css
@@ -20,21 +21,22 @@ sass_partials:
   - "navbar.sass"
 gallery:
   images:
-    - ['/resources/images/gallery/gallery_image_1.jpg', 'hello, this is a description']
-    - [/resources/images/gallery/gallery_image_2.jpg, 'this other picture has another description']
-    - [/resources/images/gallery/gallery_image_3.jpg]
-    - [/resources/images/gallery/gallery_image_4.jpg]
-    - [/resources/images/gallery/gallery_image_5.jpg]
-    - [/resources/images/gallery/gallery_image_6.jpg, 'some of the pictures may not have descriptions and that is A ok!']
-    - [/resources/images/gallery/gallery_image_7.jpg]
-    - [/resources/images/gallery/gallery_image_8.jpg]
-    - [/resources/images/gallery/gallery_image_9.jpg]
-    - [/resources/images/gallery/gallery_image_10.jpg]
-    - [/resources/images/gallery/gallery_image_11.jpg]
-    - [/resources/images/gallery/gallery_image_12.jpg]
-    - [/resources/images/gallery/gallery_image_13.jpg]
-    - [/resources/images/gallery/gallery_image_14.jpg]
-    - [/resources/images/gallery/gallery_image_15.jpg]
-    - [/resources/images/gallery/gallery_image_16.jpg]
-    - [/resources/images/gallery/gallery_image_17.jpg]
-    - [/resources/images/gallery/gallery_image_18.jpg]
+    - source: /resources/images/gallery/gallery_image_1.jpg
+      # description: this is a description
+    - source: /resources/images/gallery/gallery_image_2.jpg
+    - source: /resources/images/gallery/gallery_image_3.jpg
+    - source: /resources/images/gallery/gallery_image_4.jpg
+    - source: /resources/images/gallery/gallery_image_5.jpg
+    - source: /resources/images/gallery/gallery_image_6.jpg
+    - source: /resources/images/gallery/gallery_image_7.jpg
+    - source: /resources/images/gallery/gallery_image_8.jpg
+    - source: /resources/images/gallery/gallery_image_9.jpg
+    - source: /resources/images/gallery/gallery_image_10.jpg
+    - source: /resources/images/gallery/gallery_image_11.jpg
+    - source: /resources/images/gallery/gallery_image_12.jpg
+    - source: /resources/images/gallery/gallery_image_13.jpg
+    - source: /resources/images/gallery/gallery_image_14.jpg
+    - source: /resources/images/gallery/gallery_image_15.jpg
+    - source: /resources/images/gallery/gallery_image_16.jpg
+    - source: /resources/images/gallery/gallery_image_17.jpg
+    - source: /resources/images/gallery/gallery_image_18.jpg

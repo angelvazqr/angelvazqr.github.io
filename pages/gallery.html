@@ -15,17 +15,15 @@ data_file: 'gallery'
   {% for image in site.data[page.data_file].gallery.images %}
     <div class='card'>
       <div class='image'>
-        <img id='image-{{ forloop.index0 }}'src='{{ image[0] }}'>
+        <img id='image-{{ forloop.index0 }}'src='{{ image.source }}'>
       </div>
-      {% comment %}
-      {% if image[1] %}
+      {% if image.description %}
         <div class='image-description'>
           <p>
-            {{ image[1]}}
+            {{ image.description }}
           </p>
         </div>
       {% endif %}
-      {% endcomment %}
     </div>
   {% endfor %}
 </div>

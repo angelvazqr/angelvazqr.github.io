@@ -5,6 +5,7 @@ metatada:
     keywords: ""
     author: ""
     type: ""
+    image: ""
 css:
   - https://fonts.googleapis.com/css?family=Raleway:500&display=swap
   - /resources/css/contact.css
@@ -18,3 +19,8 @@ sass_partials:
   - "sizes.sass"
   - "mixins.sass"
   - "navbar.sass"
+contact_info:
+  address:
+    - 4686 Brooke Street
+    - Houston TX 77092
+    - 713-685-9684
