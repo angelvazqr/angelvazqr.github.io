@@ -5,6 +5,7 @@ metatada:
     keywords: ""
     author: ""
     type: ""
+    image: ""
 css:
   - https://fonts.googleapis.com/css?family=Raleway:500&display=swap
   - /resources/css/rates.css

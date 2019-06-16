@@ -7,14 +7,14 @@ data_file: 'contact'
 
 <h1 class='title'>Contact Us</h1>
 <div class='info'>
-  <p>4686 Brooke Street</p>
-  <p>Houston TX 77092</p>
-  <p>713-685-9684</p>
+  {% for line in site.data[page.data_file].contact_info.address %}
+    <p>{{ line }}</p>
+  {% endfor %}
 </div>
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {onSubmitForm();}"></iframe>
 
-<div id='contact-location' class='page-container card'>
+<div id='contact-form' class='page-container card'>
   <div class='card-only-column text-center'>
       <form class='form' action='https://docs.google.com/forms/d/e/1FAIpQLSeHcA40ILQO7pwooU6ovoLtQd_kzeUeFSiNUTLk73ERrEL9hA/formResponse' onsubmit="submitted=true" target="hidden_iframe">
         <div class='input-wrapper'>
@@ -30,31 +30,4 @@ data_file: 'contact'
       </form>
       <div class='state'></div>
     </div>
-  <!-- <div class='card-1st-column'>
-    <iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=New%20York%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-  </div>
-  <div class='card-2nd-column text-center'>
-    <h1 class='title'>Location</h1>
-    <p>4686 Brooke Street</p>
-    <p>Houston TX 77092</p>
-    <p>713-685-9684</p>
-  </div> -->
 </div>
-
-<!-- <div id='contact-form' class='page-container card'>
-  <div class='card-only-column text-center'>
-    <h1 class='title'>Contact Us</h1>
-    <form>
-      <div class='input-wrapper'>
-        <input type='text' placeholder="Name"/>
-      </div>
-      <div class='input-wrapper'>
-        <input type='email' placeholder="Email"/>
-      </div>
-      <div class='input-wrapper'>
-        <textarea placeholder='Write a message' name="name" rows="1"></textarea>
-      </div>
-      <input type='submit' value='Send' class='btn'/>
-    </form>
-  </div>
-</div> -->
