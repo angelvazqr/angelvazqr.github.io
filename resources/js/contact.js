@@ -10,18 +10,21 @@ onSubmitForm = function(){
   console.log('before')
 }
 
+validateForm = function(){
+  console.log('validateForm not set')
+}
+submitted=false;
+
 $(document).ready(function() {
   {% include partial_assets/javascript_partials.js %}
   $('input[type=text], input[type=email], textarea').focus((e)=>{
-    console.log('focues')
     $(e.target).closest('.input-wrapper').addClass('focus');
   });
   $('input[type=text], input[type=email], textarea').focusout((e)=>{
-    console.log('focues')
     $(e.target).closest('.input-wrapper').removeClass('focus');
   });
 
-  function validateForm(){
+  validateForm = function(){
     let $name = $('#contact-location form .name');
     let hasError = false;
     // check name
@@ -38,26 +41,33 @@ $(document).ready(function() {
       hasError = true;
     }
     else $email.removeClass('error');
-
+    submitted=!hasError;
     return hasError;
   }
 
-  $('#contact-location form').on('submit', function (e) {
-    e.preventDefault();
-    if(validateForm()) return false;
-    $.ajax({
-      type: 'post',
-      url: 'https://docs.google.com/forms/d/e/1FAIpQLSeHcA40ILQO7pwooU6ovoLtQd_kzeUeFSiNUTLk73ERrEL9hA/formResponse',
-      data: $('#contact-location form').serialize(),
-      success: function () {
-        console.log('success')
-        $('#contact-location form')[0].reset();
-        $('#contact-location .state').text('Success!');
-      }
-    });
-  });
+  // cross origin prevents this to find out if successful
+  // $('#contact-location form').on('submit', function (e) {
+  //   e.preventDefault();
+  //   if(validateForm()) return false;
+  //   $.ajax({
+  //     type: 'post',
+  //     url: 'https://docs.google.com/forms/d/e/1FAIpQLSeHcA40ILQO7pwooU6ovoLtQd_kzeUeFSiNUTLk73ERrEL9hA/formResponse',
+  //     xhrFields: {
+  //       withCredentials: true
+  //     },
+  //     data: $('#contact-location form').serialize(),
+  //     success: function () {
+  //       console.log('success')
+  //       $('#contact-location form')[0].reset();
+  //       $('#contact-location .state').text('Success!');
+  //     }
+  //   });
+  // });
 
+  // ummm.. will always be 'successful' because it is not checking for errorrs
+  // google forms redirects to a page that says if it's successful or not, in here we can't chect that so it will always assume success
   onSubmitForm = function(){
-    console.log('after');
+    $('#contact-location form')[0].reset();
+    $('#contact-location .state').text('Success!');
   }
 });
