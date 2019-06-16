@@ -18,3 +18,13 @@ sass_partials:
   - "sizes.sass"
   - "mixins.sass"
   - "navbar.sass"
+rates:
+  - title: Chicken Noodle
+    description: A type of chicken that noodles a lot
+    price: $54.33
+  - title: Lobster Bisque
+    description: Say What! A bisque of lobster.
+    price: $233.49
+  - title: Hamburger with Cheese
+    description: a burger with cheese, duh!
+    price: $3.00

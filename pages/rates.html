@@ -5,4 +5,20 @@ permalink: /rates
 data_file: 'rates'
 ---
 
-Rates
+<div id='rates' class='page-container card'>
+  <div class='image-wrapper' style='background-image: url("/resources/images/rates_background.jpg")'></div>
+  <div class='text'>
+    <h1 class='title'>Rates</h1>
+    <div class='rate-list'>
+      {% for item in site.data[page.data_file].rates %}
+        <div class='rate-item'>
+          <div class='item-info'>
+            <h3 class='item-title'>{{ item.title }}</h3>
+            <p class='item-description'>{{ item.description }}</p>
+          </div>
+          <div class='item-price'>{{ item.price }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

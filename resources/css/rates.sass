@@ -3,3 +3,56 @@ data_file: rates
 ---
 
 {% include partial_assets/sass_partials.sass %}
+
+.view-wrapper
+  margin: 20px auto
+  width: 100%
+
+#rates
+  display: flex
+  overflow: hidden
+  position: relative
+  margin: auto
+  margin-bottom: 30px
+  flex-flow: wrap
+  .image-wrapper
+    width: 100%
+    min-height: 200px
+    background-position: cover
+    background-position: center
+    background-repeat: no-repeat
+  .title
+    margin-top: 10px
+  .text
+    width: 100%
+    padding: 0 10px 10px
+    .rate-list
+      margin-top: 20px
+      .item-info
+        display: inline-block
+      .item-price
+        display: inline-block
+        margin-left: auto
+        font-weight: 600
+      .item-title
+        // font-weight: 400
+      .item-description
+        color: rgb(98, 98, 98)
+        font-size: .9rem
+      .rate-item
+        display: flex
+        flex-flow: wrap
+        align-items: center
+        &::after
+          content: ""
+          display: block
+          height: 1px
+          width: 100%
+          background-color: $accent-color
+          margin-bottom: 15px
+  +medium-devices
+    .image-wrapper
+      width: 35%
+    .text
+      width: 65%
+      padding: 10px
