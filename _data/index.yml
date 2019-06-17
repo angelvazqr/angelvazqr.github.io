@@ -8,6 +8,8 @@ metatada:
     image: ""
 css:
   - https://fonts.googleapis.com/css?family=Raleway:500&display=swap
+  - https://fonts.googleapis.com/css?family=Raleway:100,200&display=swap
+  - https://fonts.googleapis.com/css?family=Montserrat:200&display=swap
   - /resources/css/index.css
 js:
   - https://code.jquery.com/jquery-3.4.1.min.js

@@ -3,6 +3,6 @@ if(location.hash == '#fade'){
 
 }
 
-$('.full-background-intro .btn').click(()=>{
+$('.full-background-intro .enter-arrow').click(()=>{
   $('.full-background-intro').fadeOut(400);
 })
