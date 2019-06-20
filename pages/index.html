@@ -5,12 +5,14 @@ permalink: /
 data_file: 'index'
 ---
 {% include full-background-intro.html %}
-<div id='index' class='page-container card'>
+<div id='index' class='page-container-full'>
   <div class='image-wrapper' style='background-image: url({{ site.data[page.data_file].about.image }})'>
+    <img src='{{ site.data[page.data_file].about.image }}' />
   </div>
   <div class='about-text'>
     <h1 class='about-title'>{{ site.data[page.data_file].about.title }}</h1>
-    <p>
+    <p class='about-paragraph'>
+      <img class='paragraph-photo'  src='{{ site.data[page.data_file].about.par_image }}'/>
       {{ site.data[page.data_file].about.text }}
     </p>
   </div>

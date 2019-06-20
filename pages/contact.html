@@ -5,16 +5,64 @@ permalink: /contact
 data_file: 'contact'
 ---
 
-<h1 class='title'>Contact Us</h1>
+<div class='page-container-full' id='example'>
+  <div class='clm-2-md clm'>
+    <h1 class='title'>Our Location</h1>
+    <div class='info'>
+      <p style='margin-bottom: 20px'>
+        It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair
+      </p>
+      {% for line in site.data[page.data_file].contact_info.address %}
+        <p>{{ line }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='clm-2-sm clm'>
+    <iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=New%20York%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </div>
+</div>
+
+<!-- <h1 class='title'>Our Location</h1>
+<div class=''>
+  <div class='title-line'></div>
+</div>
 <div class='info'>
   {% for line in site.data[page.data_file].contact_info.address %}
     <p>{{ line }}</p>
   {% endfor %}
-</div>
+</div> -->
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {onSubmitForm();}"></iframe>
 
-<div id='contact-form' class='page-container card'>
+<div id='contact-form' class='page-container-full'>
+  <div class='clm-2-sm clm'>
+    <h1 class='title'>Contact Form</h1>
+    <p style='margin-bottom: 30px'>
+      To help visitors get in touch with you, double-click this page, hover the form, and click Edit. THen go to the Storage tab and choose where the information will be sent.
+    </p>
+  </div>
+  <div class='clm-2-md clm'>
+    <form>
+      <label>Name</label>
+      <div class='multi-input-wrapper'>
+        <input type='text' id='fname-input'></input>
+        <input type='text' id='lname-input'></input>
+        <div class='sublabel'>First Name</div>
+        <div class='sublabel'>Last Name</div>
+      </div>
+      <label>Email Address</label>
+      <input type='email'></input>
+      <label>Subject</label>
+      <input type='text'></input>
+      <label>Message</label>
+      <textarea name="name" rows="4"></textarea>
+      <input type='submit' class='btn' value='SUBMIT'></input
+    </form>
+  </div>
+</div>
+
+
+<!-- <div id='contact-form' class='page-container card'>
   <div class='card-only-column text-center'>
       <form class='form' action='https://docs.google.com/forms/d/e/1FAIpQLSeHcA40ILQO7pwooU6ovoLtQd_kzeUeFSiNUTLk73ERrEL9hA/formResponse' onsubmit="submitted=true" target="hidden_iframe">
         <div class='input-wrapper'>
@@ -30,4 +78,4 @@ data_file: 'contact'
       </form>
       <div class='state'></div>
     </div>
-</div>
+</div> -->
