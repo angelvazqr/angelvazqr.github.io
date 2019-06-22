@@ -7,7 +7,8 @@ metatada:
     type: ""
     image: ""
 css:
-  - https://fonts.googleapis.com/css?family=Raleway:500&display=swap
+  - https://fonts.googleapis.com/css?family=Montserrat:200&display=swap
+  - https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap
   - /resources/css/index.css
 js:
   - https://code.jquery.com/jquery-3.4.1.min.js
@@ -29,6 +30,7 @@ full-background-intro:
     link: "#fade"
     text: "Enter"
 about:
-  image: './resources/images/profile.jpg'
-  title: It all started when...
+  image: './resources/images/about_background.jpg'
+  par_image: './resources/images/profile_cropped.jpg'
+  title: What We're All About
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque nibh. In hac habitasse platea dictumst. Donec cursus felis ut neque consectetur pulvinar. Phasellus ultricies quam ac justo suscipit ornare id a purus. Vestibulum vehicula, tellus in vulputate suscipit, sem nisi laoreet odio, ac aliquam neque justo sit amet lacus. Nunc dictum erat in est dapibus, ac imperdiet arcu auctor. Vestibulum sit amet iaculis mi. In venenatis ex eu urna fringilla, in finibus ex scelerisque. Vestibulum fringilla hendrerit diam hendrerit interdum.
