@@ -8,5 +8,5 @@ it gets the resources from the data file (the data file is defined in the page)
 {% endfor %}
 
 {% for js in site.data[page.data_file].js %}
-  <script src='{{ js }}'></script>
+  <script src='{{ js.src }}' {% if js.async %} async {% endif %}{% if js.defer %} defer {% endif %}></script>
 {% endfor %}
