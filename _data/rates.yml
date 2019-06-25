@@ -10,8 +10,8 @@ css:
   - https://fonts.googleapis.com/css?family=Montserrat:200&display=swap
   - /resources/css/rates.css
 js:
-  - https://code.jquery.com/jquery-3.4.1.min.js
-  - /resources/js/rates.js
+  - src: https://code.jquery.com/jquery-3.4.1.min.js
+  - src: /resources/js/rates.js
 javascript_partials:
   - partial_assets/js/navbar.js
 sass_partials:

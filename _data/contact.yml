@@ -10,8 +10,11 @@ css:
   - https://fonts.googleapis.com/css?family=Montserrat:200&display=swap
   - /resources/css/contact.css
 js:
-  - https://code.jquery.com/jquery-3.4.1.min.js
-  - /resources/js/contact.js
+  - src: https://code.jquery.com/jquery-3.4.1.min.js
+  - src: /resources/js/contact.js
+  - src: https://maps.googleapis.com/maps/api/js?key=AIzaSyBmt-iaL4EpFINiOwUqA2zJaBqUyCiQ_Lg&callback=initMap
+    async: true
+    defer: true
 javascript_partials:
   - partial_assets/js/navbar.js
 sass_partials:

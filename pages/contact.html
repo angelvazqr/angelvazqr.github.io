@@ -19,19 +19,8 @@ data_file: 'contact'
   </div>
   <div class='clm-2-sm clm'>
     <div id="map"></div>
-    <!-- <iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=New%20York%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> -->
   </div>
 </div>
-
-<!-- <h1 class='title'>Our Location</h1>
-<div class=''>
-  <div class='title-line'></div>
-</div>
-<div class='info'>
-  {% for line in site.data[page.data_file].contact_info.address %}
-    <p>{{ line }}</p>
-  {% endfor %}
-</div> -->
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {onSubmitForm();}"></iframe>
 
@@ -72,24 +61,3 @@ data_file: 'contact'
     });
   }
 </script>
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmt-iaL4EpFINiOwUqA2zJaBqUyCiQ_Lg&callback=initMap" async defer></script>
-
-<!-- <div id='contact-form' class='page-container card'>
-  <div class='card-only-column text-center'>
-      <form class='form' action='https://docs.google.com/forms/d/e/1FAIpQLSeHcA40ILQO7pwooU6ovoLtQd_kzeUeFSiNUTLk73ERrEL9hA/formResponse' onsubmit="submitted=true" target="hidden_iframe">
-        <div class='input-wrapper'>
-          <input type="text" class='name' name="entry.77375347" placeholder="Name">
-        </div>
-        <div class='input-wrapper'>
-          <input type="text" class='email' name="entry.1733405076" placeholder="Email">
-        </div>
-        <div class='input-wrapper'>
-          <textarea row=4 placeholder="Write a message" name="entry.305836304"></textarea>
-        </div>
-        <input type='submit' value='Send' class='btn'/>
-      </form>
-      <div class='state'></div>
-    </div>
-</div> -->
