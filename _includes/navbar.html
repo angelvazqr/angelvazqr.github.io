@@ -8,7 +8,7 @@
     </div>
     <div class='links'>
       <ul>
-        <li class='{% if page.url == "/" %} active {% endif %}'><a href='/home'>About</a></li>
+        <li class='{% if page.url == "/" or page.url == "/home" %} active {% endif %}'><a href='/home'>About</a></li>
         <li class='{% if page.url == "/contact" %} active {% endif %}'><a href='/contact'>Contact</a></li>
         <li class='{% if page.url == "/gallery" %} active {% endif %}'><a href='/gallery'>Gallery</a></li>
         <li class='{% if page.url == "/rates" %} active {% endif %}'><a href='/rates'>Rates</a></li>
