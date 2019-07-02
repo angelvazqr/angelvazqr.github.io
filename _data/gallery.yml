@@ -21,22 +21,44 @@ sass_partials:
   - "navbar.sass"
 gallery:
   images:
-    - source: /resources/images/gallery/gallery_image_1.jpg
-      # description: this is a description
-    - source: /resources/images/gallery/gallery_image_2.jpg
-    - source: /resources/images/gallery/gallery_image_3.jpg
-    - source: /resources/images/gallery/gallery_image_4.jpg
-    - source: /resources/images/gallery/gallery_image_5.jpg
-    - source: /resources/images/gallery/gallery_image_6.jpg
-    - source: /resources/images/gallery/gallery_image_7.jpg
-    - source: /resources/images/gallery/gallery_image_8.jpg
-    - source: /resources/images/gallery/gallery_image_9.jpg
-    - source: /resources/images/gallery/gallery_image_10.jpg
-    - source: /resources/images/gallery/gallery_image_11.jpg
-    - source: /resources/images/gallery/gallery_image_12.jpg
-    - source: /resources/images/gallery/gallery_image_13.jpg
-    - source: /resources/images/gallery/gallery_image_14.jpg
-    - source: /resources/images/gallery/gallery_image_15.jpg
-    - source: /resources/images/gallery/gallery_image_16.jpg
-    - source: /resources/images/gallery/gallery_image_17.jpg
-    - source: /resources/images/gallery/gallery_image_18.jpg
+    # - source: /resources/images/gallery/gallery_image_1.mp4
+    #   isVideo: true
+    #   # description: this is a description
+    # - source: /resources/images/gallery/gallery_image_2.mp4
+    #   isVideo: true
+    - source: /resources/images/gallery/gallery_image_3.jpeg
+    - source: /resources/images/gallery/gallery_image_4.jpeg
+    - source: /resources/images/gallery/gallery_image_5.jpeg
+    - source: /resources/images/gallery/gallery_image_6.jpeg
+    - source: /resources/images/gallery/gallery_image_7.jpeg
+    - source: /resources/images/gallery/gallery_image_8.jpeg
+    - source: /resources/images/gallery/gallery_image_9.jpeg
+    - source: /resources/images/gallery/gallery_image_10.jpeg
+    - source: /resources/images/gallery/gallery_image_11.jpeg
+    - source: /resources/images/gallery/gallery_image_12.jpeg
+    - source: /resources/images/gallery/gallery_image_13.jpeg
+    - source: /resources/images/gallery/gallery_image_14.jpeg
+    - source: /resources/images/gallery/gallery_image_15.jpeg
+    - source: /resources/images/gallery/gallery_image_16.jpeg
+    - source: /resources/images/gallery/gallery_image_17.jpeg
+    - source: /resources/images/gallery/gallery_image_18.jpeg
+    - source: /resources/images/gallery/gallery_image_19.jpeg
+    - source: /resources/images/gallery/gallery_image_20.jpeg
+    - source: /resources/images/gallery/gallery_image_21.jpeg
+    - source: /resources/images/gallery/gallery_image_22.jpeg
+    - source: /resources/images/gallery/gallery_image_23.jpeg
+    - source: /resources/images/gallery/gallery_image_24.jpeg
+    - source: /resources/images/gallery/gallery_image_25.jpeg
+    - source: /resources/images/gallery/gallery_image_26.jpeg
+    - source: /resources/images/gallery/gallery_image_27.jpeg
+    - source: /resources/images/gallery/gallery_image_28.jpeg
+    - source: /resources/images/gallery/gallery_image_29.jpeg
+    - source: /resources/images/gallery/gallery_image_30.jpeg
+    - source: /resources/images/gallery/gallery_image_31.jpeg
+    - source: /resources/images/gallery/gallery_image_32.jpeg
+    - source: /resources/images/gallery/gallery_image_33.jpeg
+    - source: /resources/images/gallery/gallery_image_34.jpeg
+    - source: /resources/images/gallery/gallery_image_35.jpeg
+    - source: /resources/images/gallery/gallery_image_36.jpeg
+    - source: /resources/images/gallery/gallery_image_37.jpeg
+    - source: /resources/images/gallery/gallery_image_38.jpeg
