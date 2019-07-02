@@ -9,8 +9,8 @@ data_file: 'contact'
   <div class='clm-2-md clm'>
     <h1 class='title'>Our Location</h1>
     <div class='info'>
-      <p style='margin-bottom: 20px'>
-        It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair
+      <p style='margin-bottom: 20px' class='text-justify'>
+        {{ site.data[page.data_file].contact_info.some-text }}
       </p>
       {% for line in site.data[page.data_file].contact_info.address %}
         <p>{{ line }}</p>
@@ -27,8 +27,8 @@ data_file: 'contact'
 <div id='contact-form' class='page-container-full'>
   <div class='clm-2-sm clm'>
     <h1 class='title'>Contact Form</h1>
-    <p style='margin-bottom: 30px'>
-      To help visitors get in touch with you, double-click this page, hover the form, and click Edit. Then go to the Storage tab and choose where the information will be sent.
+    <p style='margin-bottom: 30px' class='text-justify'>
+      {{ site.data[page.data_file].contact_info.form.text }}
     </p>
   </div>
   <div class='clm-2-md clm'>
@@ -45,19 +45,26 @@ data_file: 'contact'
       <label>Subject</label>
       <input type='text'></input>
       <label>Message</label>
-      <textarea name="name" rows="4"></textarea>
+      <textarea name="name" rows="6"></textarea>
       <input type='submit' class='btn' value='SUBMIT'></input
     </form>
   </div>
 </div>
 
 <script>
-  var map;
   function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 40.7648, lng: -73.9808},
-      zoom: 11,
+    let myLatLng = {
+        lat: {{ site.data[page.data_file].contact_info.map.lat }},
+        lng: {{ site.data[page.data_file].contact_info.map.lng }}
+      };
+    let map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      zoom: 13,
       disableDefaultUI: true
+    });
+    let marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map
     });
   }
 </script>
